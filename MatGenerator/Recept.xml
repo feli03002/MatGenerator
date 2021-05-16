@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<mat>
+		<recept id="001">
+			<namn>Currygryta</namn>
+			<beskrivning>denga denga</beskrivning>
+			<antsteg>
+				<steg1>Laga mat</steg1>
+			</antsteg>
+		</recept>
+		<recept id="002">
+			<namn>Svamppaj</namn>
+			<beskrivning>Paj mad svamp</beskrivning>
+			<antsteg>
+				<steg1>Ung go brr</steg1>
+			</antsteg>
+		</recept>
+		<recept id="003">
+			<namn>Falafelrulle</namn>
+			<beskrivning>brödrulle med falafel och vitlöksås</beskrivning>
+			<antsteg>
+				<steg1>man rullar dem</steg1>
+			</antsteg>
+		</recept>
+	</mat>
+	<veckan>
+	</veckan>
+</root>
