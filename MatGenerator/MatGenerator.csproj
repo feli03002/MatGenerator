@@ -64,6 +64,12 @@
     <Compile Include="LäggtillFönster.Designer.cs">
       <DependentUpon>LäggtillFönster.cs</DependentUpon>
     </Compile>
+    <Compile Include="LäggTillRecept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LäggTillRecept.Designer.cs">
+      <DependentUpon>LäggTillRecept.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StegRuta.cs">
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LäggtillFönster.resx">
       <DependentUpon>LäggtillFönster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LäggTillRecept.resx">
+      <DependentUpon>LäggTillRecept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

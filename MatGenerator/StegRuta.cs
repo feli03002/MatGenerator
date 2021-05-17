@@ -26,24 +26,34 @@ namespace MatGenerator
         private string text;
 
 
-
-        [Category("Custom props")]
-        public string Instruktion
+        public StegRuta(string L, string T)
         {
-            get { return text; }
-            set { text = value; }
+            label = L;
+            text = T;
         }
-
 
 
         [Category("Custom props")]
         public string Label
         {
             get { return label; }
-            set { label = value; }
+            set { label = value; label1.Text = value; }
+        }
+
+
+        [Category("Custom props")]
+        public string Instruction
+        {
+            get { return text; }
+            set { text = value;  }
         }
 
 
         #endregion
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
