@@ -23,13 +23,10 @@ namespace MatGenerator
         #region Properties
 
         private string label;
-        private string text;
 
-
-        public StegRuta(string L, string T)
+        public StegRuta(string L)
         {
             label = L;
-            text = T;
         }
 
 
@@ -42,10 +39,9 @@ namespace MatGenerator
 
 
         [Category("Custom props")]
-        public string Instruction
+        public string Instruktion
         {
-            get { return text; }
-            set { text = value;  }
+            get { return textBox1.Text; }
         }
 
 

@@ -1,28 +1,40 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<mat>
-		<recept id="001">
-			<namn>Currygryta</namn>
-			<beskrivning>denga denga</beskrivning>
-			<antsteg>
-				<steg1>Laga mat</steg1>
-			</antsteg>
-		</recept>
-		<recept id="002">
-			<namn>Svamppaj</namn>
-			<beskrivning>Paj mad svamp</beskrivning>
-			<antsteg>
-				<steg1>Ung go brr</steg1>
-			</antsteg>
-		</recept>
-		<recept id="003">
-			<namn>Falafelrulle</namn>
-			<beskrivning>brödrulle med falafel och vitlöksås</beskrivning>
-			<antsteg>
-				<steg1>man rullar dem</steg1>
-			</antsteg>
-		</recept>
-	</mat>
-	<veckan>
-	</veckan>
+  <info>
+    <lastID>4</lastID>
+  </info>
+  <mat>
+    <recept id="1" tag="kyk">
+      <namn>Currygryta</namn>
+      <beskrivning>denga denga</beskrivning>
+      <steg>
+        <s1>Laga mat</s1>
+      </steg>
+    </recept>
+    <recept id="2" tag="veg">
+      <namn>Svamppaj</namn>
+      <beskrivning>Paj mad svamp</beskrivning>
+      <steg>
+        <s1>Ung go brr</s1>
+      </steg>
+    </recept>
+    <recept id="3" tag="veg">
+      <namn>Falafelrulle</namn>
+      <beskrivning>brödrulle med falafel och vitlöksås</beskrivning>
+      <steg>
+        <s1>man rullar dem</s1>
+      </steg>
+    </recept>
+    <recept id="4" tag="fisk" glutenfri="J">
+      <namn>FiskPaj</namn>
+      <beskrivning>Krämig paj fylld med sotad lax och mozzarella.</beskrivning>
+      <steg>
+        <s1>hacka fisken.</s1>
+        <s2>Lägg den i formen.</s2>
+        <s3>Ställ formen i ugnen i 50 minuter.</s3>
+      </steg>
+    </recept>
+  </mat>
+  <veckan>
+  </veckan>
 </root>
