@@ -46,10 +46,10 @@ namespace MatGenerator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(Stegrutor.Count > 1)
+            if(Stegrutor.Count > 0)
             {
                 Stegrutor.RemoveAt(Stegrutor.Count - 1);
-                flowLayoutPanel1.Controls.RemoveAt(Stegrutor.Count - 1);
+                flowLayoutPanel1.Controls.RemoveAt(Stegrutor.Count);
             }
 
             flowLayoutPanel1.Controls.Clear();
@@ -68,7 +68,13 @@ namespace MatGenerator
                 SaveToXML(namn);
                 this.Close();
             }
-               
+            else if (namn == "")
+            {
+                label5.Text = "Namnge receptet!";
+            }
+            else if (Stegrutor.Count == 0)
+                label5.Text = "Lägg till steg!";
+
         }
 
         private void SaveToXML(string namn)

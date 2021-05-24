@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <info>
-    <lastID>4</lastID>
+    <lastID>5</lastID>
   </info>
   <mat>
     <recept id="1" tag="kyk">
@@ -32,6 +32,15 @@
         <s1>hacka fisken.</s1>
         <s2>Lägg den i formen.</s2>
         <s3>Ställ formen i ugnen i 50 minuter.</s3>
+      </steg>
+    </recept>
+    <recept id="5" tag="vegetarisk" glutenfri="J">
+      <namn>Egg fried rice</namn>
+      <beskrivning>egg</beskrivning>
+      <steg>
+        <s1>steg ägg</s1>
+        <s2>stek ris</s2>
+        <s3>done</s3>
       </steg>
     </recept>
   </mat>
