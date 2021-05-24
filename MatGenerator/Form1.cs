@@ -46,7 +46,7 @@ namespace MatGenerator
 
                     listItems[i].Description = recept.FirstChild.NextSibling.InnerText;
 
-                    //listItems[i].Title = elemList[i].InnerText;
+                    listItems[i].ID = Convert.ToInt32(elemList[i].InnerText);
 
 
                     if (flowLayoutPanel1.Controls.Count < 0)

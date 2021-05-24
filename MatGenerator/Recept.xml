@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <info>
-    <lastID>5</lastID>
+    <lastID>7</lastID>
   </info>
   <mat>
     <recept id="1" tag="kyk">
@@ -43,11 +43,20 @@
         <s3>done</s3>
       </steg>
     </recept>
+    <recept id="7" tag="vegetarisk" glutenfri="J">
+      <namn>Lovisas frukost</namn>
+      <beskrivning>Göör go glutenfri frukost för en mysig tjej</beskrivning>
+      <steg>
+        <s1>Bre glutenfria knäckebröd med lovisas egna smör</s1>
+        <s2>Häll upp fil i en tallrik och lägg i jordnötsmör</s2>
+      </steg>
+    </recept>
   </mat>
   <veckan>
-	  <receptID>1</receptID>
-	  <receptID>3</receptID>
-	  <receptID>4</receptID>
-	  <receptID>5</receptID>
+    <receptID>1</receptID>
+    <receptID>3</receptID>
+    <receptID>4</receptID>
+    <receptID>5</receptID>
+	<receptID>7</receptID>
   </veckan>
 </root>

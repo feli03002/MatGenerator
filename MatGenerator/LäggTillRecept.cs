@@ -62,18 +62,25 @@ namespace MatGenerator
             namn = namn.Trim();
 
 
-            if (namn != "")
-            {
-                SaveToXML(namn);
-                this.Close();
-            }
-            else if (namn == "")
+            if (namn == "")
             {
                 label5.Text = "Namnge receptet!";
             }
             else if (Stegrutor.Count == 0)
+            {
                 label5.Text = "Lägg till steg!";
+            }
+            else if (RBfisk.Checked == true && RBfläsk.Checked == false && RBkyckling.Checked == false && RBnötkött.Checked == false && RBvegetarisk.Checked == false)
+                label5.Text = "Välj proteinkälla!";
+            else
+            {
+                SaveToXML(namn);
+                this.Close();
+            }
+                
 
+
+            
         }
 
         private void SaveToXML(string namn)

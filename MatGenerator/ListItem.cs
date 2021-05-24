@@ -21,6 +21,7 @@ namespace MatGenerator
 
         private string title;
         private string description;
+        private int id;
 
         [Category("Custom props")]
         public string Title
@@ -35,9 +36,14 @@ namespace MatGenerator
             get { return description; }
             set { description = value; desc_label.Text = value; }
         }
+        [Category("Custom props")]
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
 
-       
-        
+
         #endregion
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,7 +53,8 @@ namespace MatGenerator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ReceptFönster form = new ReceptFönster(id);
+            form.Show();
         }
     }
 }
