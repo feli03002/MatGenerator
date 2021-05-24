@@ -45,7 +45,6 @@ namespace MatGenerator
             this.RBglutenfri = new System.Windows.Forms.RadioButton();
             this.RBvegetarisk = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -221,15 +220,6 @@ namespace MatGenerator
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Protein";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "label3";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -246,7 +236,6 @@ namespace MatGenerator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RBglutenfri);
             this.Controls.Add(this.button3);
@@ -286,7 +275,6 @@ namespace MatGenerator
         private System.Windows.Forms.RadioButton RBglutenfri;
         private System.Windows.Forms.RadioButton RBvegetarisk;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
     }
 }

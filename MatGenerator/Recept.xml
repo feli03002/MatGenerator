@@ -45,5 +45,9 @@
     </recept>
   </mat>
   <veckan>
+	  <receptID>1</receptID>
+	  <receptID>3</receptID>
+	  <receptID>4</receptID>
+	  <receptID>5</receptID>
   </veckan>
 </root>

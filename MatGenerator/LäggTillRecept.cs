@@ -29,7 +29,6 @@ namespace MatGenerator
            {
                 Stegrutor.Add(new StegRuta());
                 Stegrutor[Stegrutor.Count - 1].Label = Convert.ToString(Stegrutor.Count);
-               // Stegrutor[Stegrutor.Count - 1].Instruction = richTextBox2.Text;
                 populateList();
            }
            

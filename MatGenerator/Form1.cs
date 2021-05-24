@@ -28,23 +28,39 @@ namespace MatGenerator
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
 
-            XmlElement root = doc.DocumentElement;
-            XmlNodeList elemList = root.GetElementsByTagName("recept");
+            XmlElement veckan = (XmlElement)doc.SelectSingleNode("/root/veckan");
+            XmlNodeList elemList = veckan.ChildNodes;
 
-            ListItem[] listItems = new ListItem[elemList.Count];
-            for(int i = 0; i < elemList.Count; i++)
+            if(elemList.Count > 0)
             {
-                listItems[i] = new ListItem();
-                //listItems[i].Title = elemList[i].InnerText;
-
-
-                if (flowLayoutPanel1.Controls.Count < 0)
+                ListItem[] listItems = new ListItem[elemList.Count];
+                for (int i = 0; i < elemList.Count; i++)
                 {
-                    flowLayoutPanel1.Controls.Clear();
-                }
-                else
-                    flowLayoutPanel1.Controls.Add(listItems[i]);
+                     string xpath = "/root/mat/recept[@id='" + elemList[i].InnerText + "']";
 
+
+                    XmlElement recept = (XmlElement)doc.SelectSingleNode(xpath);
+                    listItems[i] = new ListItem();
+
+                    listItems[i].Title = recept.FirstChild.InnerText;
+
+                    listItems[i].Description = recept.FirstChild.NextSibling.InnerText;
+
+                    //listItems[i].Title = elemList[i].InnerText;
+
+
+                    if (flowLayoutPanel1.Controls.Count < 0)
+                    {
+                        flowLayoutPanel1.Controls.Clear();
+                    }
+                    else
+                        flowLayoutPanel1.Controls.Add(listItems[i]);
+
+                }
+            }
+            else
+            {
+                label2.Text = "Du har inga recept planerade";
             }
         }
 
@@ -55,13 +71,13 @@ namespace MatGenerator
 
         private void inställningarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            LäggTillRecept form = new LäggTillRecept();
+            form.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            LäggTillRecept form = new LäggTillRecept();
-            form.Show();
+            
         }
     }
 }
