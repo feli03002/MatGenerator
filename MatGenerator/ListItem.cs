@@ -67,7 +67,7 @@ namespace MatGenerator
             if (AllaRecept.RaderaRecept(id))
             {
                 AllaRecept.UppdateraLista();
-                Program.PopulateList(Form1.flowlayoutpanel1);
+                Form1.UppdateraLista();
             }
 
         }

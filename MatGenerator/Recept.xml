@@ -27,14 +27,6 @@
         <s3>Ställ formen i ugnen i 50 minuter.</s3>
       </steg>
     </recept>
-    <recept id="7" tag="vegetarisk" glutenfri="J" favorit="N">
-      <namn>Lovisas frukost</namn>
-      <beskrivning>Göör go glutenfri frukost för en mysig tjej</beskrivning>
-      <steg>
-        <s1>Bre glutenfria knäckebröd med lovisas egna smör</s1>
-        <s2>Häll upp fil i en tallrik och lägg i jordnötsmör</s2>
-      </steg>
-    </recept>
     <recept id="10" tag="nötkött" glutenfri="J" favorit="N">
       <namn>Saftig kalvrygg</namn>
       <beskrivning>Smörstekt kalvrygg med ramslöksemultion</beskrivning>
@@ -42,16 +34,12 @@
         <s1>stek</s1>
         <s2>sause</s2>
         <s3>mög rön</s3>
-        <s4>nice cock</s4>
-        <s5>CABT</s5>
+        <s4>CABT</s4>
       </steg>
     </recept>
   </mat>
   <veckan>
-    <receptID id="5" />
-    <receptID id="3" />
-    <receptID id="10" />
-    <receptID id="4" />
     <receptID id="1" />
+    <receptID id="3" />
   </veckan>
 </root>
