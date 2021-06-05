@@ -1,31 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <info>
-    <lastID>7</lastID>
+    <lastID>10</lastID>
   </info>
   <mat>
-    <recept id="1" tag="kyk">
+    <recept id="1" tag="kyckling" glutenfri="N" favorit="N">
       <namn>Currygryta</namn>
       <beskrivning>denga denga</beskrivning>
       <steg>
         <s1>Laga mat</s1>
       </steg>
     </recept>
-    <recept id="2" tag="veg">
-      <namn>Svamppaj</namn>
-      <beskrivning>Paj mad svamp</beskrivning>
-      <steg>
-        <s1>Ung go brr</s1>
-      </steg>
-    </recept>
-    <recept id="3" tag="veg">
+    <recept id="3" tag="vegetarisk" glutenfri="N" favorit="N">
       <namn>Falafelrulle</namn>
       <beskrivning>brödrulle med falafel och vitlöksås</beskrivning>
       <steg>
         <s1>man rullar dem</s1>
       </steg>
     </recept>
-    <recept id="4" tag="fisk" glutenfri="J">
+    <recept id="4" tag="fisk" glutenfri="J" favorit="J">
       <namn>FiskPaj</namn>
       <beskrivning>Krämig paj fylld med sotad lax och mozzarella.</beskrivning>
       <steg>
@@ -34,16 +27,7 @@
         <s3>Ställ formen i ugnen i 50 minuter.</s3>
       </steg>
     </recept>
-    <recept id="5" tag="vegetarisk" glutenfri="J">
-      <namn>Egg fried rice</namn>
-      <beskrivning>egg</beskrivning>
-      <steg>
-        <s1>steg ägg</s1>
-        <s2>stek ris</s2>
-        <s3>done</s3>
-      </steg>
-    </recept>
-    <recept id="7" tag="vegetarisk" glutenfri="J">
+    <recept id="7" tag="vegetarisk" glutenfri="J" favorit="N">
       <namn>Lovisas frukost</namn>
       <beskrivning>Göör go glutenfri frukost för en mysig tjej</beskrivning>
       <steg>
@@ -51,12 +35,23 @@
         <s2>Häll upp fil i en tallrik och lägg i jordnötsmör</s2>
       </steg>
     </recept>
+    <recept id="10" tag="nötkött" glutenfri="J" favorit="N">
+      <namn>Saftig kalvrygg</namn>
+      <beskrivning>Smörstekt kalvrygg med ramslöksemultion</beskrivning>
+      <steg>
+        <s1>stek</s1>
+        <s2>sause</s2>
+        <s3>mög rön</s3>
+        <s4>nice cock</s4>
+        <s5>CABT</s5>
+      </steg>
+    </recept>
   </mat>
   <veckan>
-    <receptID>1</receptID>
-    <receptID>3</receptID>
-    <receptID>4</receptID>
-    <receptID>5</receptID>
-	<receptID>7</receptID>
+    <receptID id="5" />
+    <receptID id="3" />
+    <receptID id="10" />
+    <receptID id="4" />
+    <receptID id="1" />
   </veckan>
 </root>

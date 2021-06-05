@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllaRecept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllaRecept.Designer.cs">
+      <DependentUpon>AllaRecept.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereraVecka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereraVecka.Designer.cs">
+      <DependentUpon>GenereraVecka.cs</DependentUpon>
     </Compile>
     <Compile Include="ListItem.cs">
       <SubType>UserControl</SubType>
@@ -72,6 +84,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recept.cs" />
+    <Compile Include="ReceptdagElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceptdagElement.Designer.cs">
+      <DependentUpon>ReceptdagElement.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReceptFönster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +103,14 @@
     <Compile Include="StegRuta.Designer.cs">
       <DependentUpon>StegRuta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllaRecept.resx">
+      <DependentUpon>AllaRecept.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereraVecka.resx">
+      <DependentUpon>GenereraVecka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
@@ -105,6 +130,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReceptdagElement.resx">
+      <DependentUpon>ReceptdagElement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReceptFönster.resx">
       <DependentUpon>ReceptFönster.cs</DependentUpon>
     </EmbeddedResource>

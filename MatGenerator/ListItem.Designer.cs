@@ -33,6 +33,7 @@ namespace MatGenerator
             this.desc_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.Raderaknapp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@ namespace MatGenerator
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.Raderaknapp);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.desc_label);
             this.panel1.Controls.Add(this.titel_label);
@@ -78,6 +80,16 @@ namespace MatGenerator
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Raderaknapp
+            // 
+            this.Raderaknapp.Location = new System.Drawing.Point(253, 31);
+            this.Raderaknapp.Name = "Raderaknapp";
+            this.Raderaknapp.Size = new System.Drawing.Size(75, 23);
+            this.Raderaknapp.TabIndex = 4;
+            this.Raderaknapp.Text = "Radera";
+            this.Raderaknapp.UseVisualStyleBackColor = true;
+            this.Raderaknapp.Click += new System.EventHandler(this.Raderaknapp_Click);
+            // 
             // ListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,5 +107,6 @@ namespace MatGenerator
         private System.Windows.Forms.Label desc_label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Raderaknapp;
     }
 }

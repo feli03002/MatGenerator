@@ -42,6 +42,11 @@ namespace MatGenerator
             get { return id; }
             set { id = value; }
         }
+        [Category("Custom props")]
+        public bool RaderaKnapp
+        {
+            set { Raderaknapp.Enabled = value; Raderaknapp.Visible = value; }
+        }
 
 
         #endregion
@@ -55,6 +60,16 @@ namespace MatGenerator
         {
             ReceptFönster form = new ReceptFönster(id);
             form.Show();
+        }
+
+        private void Raderaknapp_Click(object sender, EventArgs e)
+        {
+            if (AllaRecept.RaderaRecept(id))
+            {
+                AllaRecept.UppdateraLista();
+                Program.PopulateList(Form1.flowlayoutpanel1);
+            }
+
         }
     }
 }

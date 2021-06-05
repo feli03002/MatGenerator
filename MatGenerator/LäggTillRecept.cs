@@ -29,18 +29,9 @@ namespace MatGenerator
            {
                 Stegrutor.Add(new StegRuta());
                 Stegrutor[Stegrutor.Count - 1].Label = Convert.ToString(Stegrutor.Count);
-                populateList();
+                Program.PopulateList(flowLayoutPanel1,Stegrutor);
            }
            
-        }
-        private void populateList()
-        {
-            for (int i = 0; i < Stegrutor.Count; i++)
-            {
-
-                flowLayoutPanel1.Controls.Add(Stegrutor[i]);
-
-            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,7 +43,7 @@ namespace MatGenerator
             }
 
             flowLayoutPanel1.Controls.Clear();
-            populateList();
+            Program.PopulateList(flowLayoutPanel1,Stegrutor);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,25 +61,26 @@ namespace MatGenerator
             {
                 label5.Text = "Lägg till steg!";
             }
-            else if (RBfisk.Checked == true && RBfläsk.Checked == false && RBkyckling.Checked == false && RBnötkött.Checked == false && RBvegetarisk.Checked == false)
+            else if (RBfisk.Checked == false && RBfläsk.Checked == false && RBkyckling.Checked == false && RBnötkött.Checked == false && RBvegetarisk.Checked == false)
+            {
                 label5.Text = "Välj proteinkälla!";
+            }
             else
             {
                 SaveToXML(namn);
                 this.Close();
             }
                 
-
-
+            
+           
             
         }
-
+        /// <summary>
+        ///     Lägger till nytt recept i xml-filen Recept.xml.
+        /// </summary>
+        /// <param name="namn"></param>
         private void SaveToXML(string namn)
         {
-           
-
-            if(textBox1.Text != "")
-            {
                 string path = System.IO.Path.Combine(Environment.CurrentDirectory, "..\\..\\Recept.xml");
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
@@ -158,7 +150,7 @@ namespace MatGenerator
                 }
                 doc.Save("..\\..\\Recept.xml");
 
-            }
+
 
         }
 
